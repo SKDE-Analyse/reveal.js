@@ -34,6 +34,8 @@
 </textarea>
 </section>
 
+<section data-auto-animate data-background-image="img/bg_wide.png" data-external="tex/fig1.html"></section>
+
 <section data-auto-animate data-background-image="img/bg_wide.png">
 	<div class="twocolumn">
 		<div>
@@ -50,6 +52,10 @@
 	</div>
 </section>
 
+
+<section>
+	<h1>Figurer</h1>
+</section>
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
 	<div class="twocolumn">
@@ -407,7 +413,7 @@ Norge &1 255 & 61,9\,\%\\
 \end{table}
 
 \end{document}
-		</code></pre></span>
+</code></pre></span>
 		</div>
 		<div>
 			<img src="tex/tab4.png">
@@ -487,7 +493,13 @@ Etiam lobortis facilisissem
 				autoAnimate: false,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes],
+				dependencies: [{
+					src: 'plugin/external/external.js',
+					condition: function() {
+						return !!document.querySelector( '[data-external],[data-external-replace]' );
+					}
+				}]
 			});
 			var resizeSlide = function() {
    Reveal.configure({
