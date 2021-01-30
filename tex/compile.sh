@@ -12,7 +12,8 @@ rm -rf ${i%.*}.fls
 rm -rf ${i%.*}.fdb_latexmk
 rm -rf ${i%.*}.*.gz
 
-echo '''<div class="twocolumn">
+echo '''<section data-auto-animate data-background-image="img/bg_wide.png">
+<div class="twocolumn">
 <div>
 <span>
 <pre><code data-trim data-noescape class="tex" data-line-numbers="">''' > ${i%.*}.html
@@ -24,6 +25,7 @@ echo "
 <img src=\"tex/${i%.*}.png\">
 </div>	
 </div>
+</section>
 " >> ${i%.*}.html
 
 done
