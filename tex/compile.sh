@@ -12,4 +12,18 @@ rm -rf ${i%.*}.fls
 rm -rf ${i%.*}.fdb_latexmk
 rm -rf ${i%.*}.*.gz
 
+echo '''<div class="twocolumn">
+<div>
+<span>
+<pre><code data-trim data-noescape class="tex" data-line-numbers="">''' > ${i%.*}.html
+cat $i >> ${i%.*}.html
+echo "
+</code></pre>
+</div>
+<div>
+<img src=\"tex/${i%.*}.png\">
+</div>	
+</div>
+" >> ${i%.*}.html
+
 done
