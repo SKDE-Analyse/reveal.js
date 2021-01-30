@@ -1,6 +1,13 @@
 .twocolumn {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2px;
     text-align: left;
  }
+
+.container {
+    display: flex;
+}
+.col {
+    flex: 1;
+}

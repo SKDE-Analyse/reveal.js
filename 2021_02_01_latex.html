@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>LaTeX og Overleaf</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -13,6 +13,7 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 		<link rel="stylesheet" href="css/twocolumn.css">
+		<link rel="stylesheet" href="css/imgborder.css">
 		</head>
 	<body>
 		<div class="reveal">
@@ -34,7 +35,6 @@
 </section>
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Enkel start</h3>
 	<div class="twocolumn">
 		<div>
 		<span><pre><code data-trim data-noescape class="tex">
@@ -52,17 +52,20 @@
 
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Figurer</h3>
 	<div class="twocolumn">
 		<div>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="2,6">
-			\documentclass{article}
-			\usepackage{graphicx}
-			\begin{document}
-			Hello World!
-			
-			\includegraphics{fig.png}
-			\end{document}
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="8|3">
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+Hello World!
+
+\includegraphics{fig.png}
+
+
+\end{document}
 					</code></pre>
 		</div>
 		<div>
@@ -72,17 +75,18 @@
 </section>
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Figurer</h3>
 	<div class="twocolumn">
 		<div>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="6,7">
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="7">
 \documentclass{article}
-\usepackage{graphicx}
-\begin{document}
-Hello World!
 
-\includegraphics[width=0.5\textwidth,
-                 angle=180]{fig.png}
+\usepackage{graphicx}
+
+\begin{document}
+
+\includegraphics[width=0.5\textwidth]{fig.png}
+
+
 \end{document}
 </code></pre>
 </div>
@@ -94,18 +98,90 @@ Hello World!
 
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Figurer</h3>
 	<div class="twocolumn">
 		<div>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="6-8">
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="7,8">
 \documentclass{article}
+
 \usepackage{graphicx}
+
+\begin{document}
+
+\includegraphics[width=0.5\textwidth,
+                 angle=180]{fig.png}
+
+\end{document}
+</code></pre>
+</div>
+<div>
+<img src="tex/fig1c.png">
+</div>	
+</div>
+</section>
+
+<section data-auto-animate data-background-image="img/bg_wide.png">
+	<div class="twocolumn">
+		<div>
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="7">
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\centering
+\includegraphics[width=0.5\textwidth,
+                 angle=180]{fig.png}
+
+\end{document}
+</code></pre>
+</div>
+<div>
+<img src="tex/fig1d.png">
+</div>	
+</div>
+</section>
+
+
+<section data-auto-animate data-background-image="img/bg_wide.png">
+	<div class="twocolumn">
+		<div>
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="8">
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+Hello World!
+
+\includegraphics{fig.png}
+
+
+\end{document}
+					</code></pre>
+		</div>
+		<div>
+			<img src="tex/fig1.png">
+		</div>	
+	</div>
+</section>
+
+
+<section data-auto-animate data-background-image="img/bg_wide.png">
+	<div class="twocolumn">
+		<div>
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="8,10|6">
+\documentclass{article}
+
+\usepackage{graphicx}
+
 \begin{document}
 Hello World!
 
 \begin{figure}
 \includegraphics{fig.png}
 \end{figure}
+
 \end{document}
 					</code></pre>
 		</div>
@@ -116,19 +192,21 @@ Hello World!
 </section>
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Figurer</h3>
 	<div class="twocolumn">
 		<div>
 			<span>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="6">
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="8">
 \documentclass{article}
+
 \usepackage{graphicx}
+
 \begin{document}
 Hello World!
 
 \begin{figure}[h]
 \includegraphics{fig.png}
 \end{figure}
+
 \end{document}
 		</code></pre></span>
 		</div>
@@ -139,13 +217,14 @@ Hello World!
 </section>
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Figurer</h3>
 	<div class="twocolumn">
 		<div>
 			<span>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="8">
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="10">
 \documentclass{article}
+
 \usepackage{graphicx}
+
 \begin{document}
 Hello World!
 
@@ -153,6 +232,7 @@ Hello World!
 \includegraphics{fig.png}
 \caption{This is my caption}
 \end{figure}
+
 \end{document}
 		</code></pre></span>
 		</div>
@@ -164,13 +244,14 @@ Hello World!
 
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Figurer</h3>
 	<div class="twocolumn">
 		<div>
 			<span>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="6,9">
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="8,11">
 \documentclass{article}
+
 \usepackage{graphicx}
+
 \begin{document}
 Hello World!
 
@@ -178,6 +259,7 @@ Hello World!
 \includegraphics{fig.png}
 \caption{This is my caption}
 \end{table}
+
 \end{document}
 		</code></pre></span>
 		</div>
@@ -189,23 +271,25 @@ Hello World!
 
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Tabeller</h3>
 	<div class="twocolumn">
 		<div>
 			<span>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="6-13">
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="9-16">
 \documentclass{article}
+
+\usepackage{graphicx}
+
 \begin{document}
 Hello World!
 
 \begin{table}[h]
 \begin{tabular}{c|cc}
 \hline
- cell1 & cell2 & cell3 \\ 
- \hline
- cell4 & cell5 & cell6 \\  
- cell7 & cell8 & cell9 \\
- \hline
+cell1 & cell2 & cell3 \\ 
+\hline
+cell4 & cell5 & cell6 \\  
+cell7 & cell8 & cell9 \\
+\hline
 \end{tabular}
 \caption{This is my caption}
 \end{table}
@@ -220,23 +304,26 @@ Hello World!
 
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Tabeller</h3>
 	<div class="twocolumn">
 		<div>
 			<span>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="6,12">
-\documentclass{article}
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="1">
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+
 \begin{document}
 Hello World!
 
 \begin{table}[h]
-\begin{Huge}
 \begin{tabular}{c|cc}
 \hline
- cell1 & cell2 & cell3 \\ 
- ...
+cell1 & cell2 & cell3 \\ 
+\hline
+cell4 & cell5 & cell6 \\  
+cell7 & cell8 & cell9 \\
+\hline
 \end{tabular}
-\end{Huge}
 \caption{This is my caption}
 \end{table}
 \end{document}
@@ -250,12 +337,14 @@ Hello World!
 
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Tabeller</h3>
 	<div class="twocolumn">
 		<div>
 			<span>
-		<pre><code data-trim data-noescape class="tex" data-line-numbers="1">
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="9,18">
 \documentclass[12pt]{article}
+
+\usepackage{graphicx}
+
 \begin{document}
 Hello World!
 
@@ -263,8 +352,11 @@ Hello World!
 \begin{Huge}
 \begin{tabular}{c|cc}
 \hline
- cell1 & cell2 & cell3 \\ 
- ...
+cell1 & cell2 & cell3 \\ 
+\hline
+cell4 & cell5 & cell6 \\  
+cell7 & cell8 & cell9 \\
+\hline
 \end{tabular}
 \end{Huge}
 \caption{This is my caption}
@@ -280,7 +372,6 @@ Hello World!
 
 
 <section data-auto-animate data-background-image="img/bg_wide.png">
-	<h3>Tabeller</h3>
 	<div class="twocolumn">
 		<div>
 			<span>
@@ -311,6 +402,45 @@ Norge &1 255 & 61,9\,\%\\
 	</div>
 </section>
 
+
+<section data-auto-animate data-background-image="img/bg_wide.png">
+	<div class="twocolumn">
+		<div>
+			
+		<pre><code data-trim data-noescape class="tex" data-line-numbers="2|7|8|10|12|14">
+\documentclass[12pt]{report}
+\begin{document}
+\chapter{First Chapter}
+
+\section{Introduction}
+
+This is the first section.
+
+Lorem  ipsum  dolor  sit  
+elit.   Etiam  lobortisfac
+neque pharetra sollicitudi
+Donec ullamcorper, felis n
+
+\section{Second Section}
+
+Lorem ipsum dolor sit amet
+Etiam lobortis facilisisse
+sollicitudin.  Praesent im
+
+\subsection{First Subsection}
+Praesent imperdietmi nec a
+
+\section*{Unnumbered Section}
+Lorem ipsum dolor sit amet
+Etiam lobortis facilisissem
+\end{document}
+		</code></pre>
+		</div>
+		<div>
+			<img src="tex/section.png">
+		</div>	
+	</div>
+</section>
 
 
 	
@@ -357,10 +487,20 @@ Norge &1 255 & 61,9\,\%\\
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				transition: 'none',
+				autoAnimate: false,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+			var resizeSlide = function() {
+   Reveal.configure({
+     width: window.innerWidth,
+     height: window.innerHeight
+   });
+}
+
+setInterval(resizeSlide, 1000);
 		</script>
 	</body>
 </html>
