@@ -1,0 +1,43 @@
+<section data-auto-animate data-background-image="img/bg_wide.png">
+<div class="twocolumn">
+<div>
+<span>
+<pre><code data-trim data-noescape class="tex" data-line-numbers="|26">
+\documentclass{article}
+
+\usepackage[
+    style = authoryear,
+    maxcitenames = 2,
+    giveninits=true,
+    uniquename=init,
+    ]{biblatex}
+
+\addbibresource{referanser.bib}
+
+
+\begin{document}
+\begin{huge}
+
+\tableofcontents
+
+\section{Introduksjon}
+
+Som vist tidligere så er det slik \parencite{Wennberg2002}.
+
+I følge \textcite{Wennberg2002} så er det slik.
+
+Dette stemmer med det som er vist her: \cite{Wennberg2002}.
+
+\printbibliography
+
+
+\end{huge}
+\end{document}
+</code></pre>
+</div>
+<div>
+<img src="tex/bibtex2.png">
+</div>	
+</div>
+</section>
+

@@ -1,0 +1,48 @@
+<section data-auto-animate data-background-image="img/bg_wide.png">
+<div class="twocolumn">
+<div>
+<span>
+<pre><code data-trim data-noescape class="tex" data-line-numbers="">
+%! TEX program = lualatex
+%! BIB program = biber
+\documentclass{article}
+
+\usepackage{lipsum}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\setsansfont{OpenSans}[
+Path = fonts/,
+Extension = .ttf,
+UprightFont = *-Regular,
+BoldFont = *-Bold,
+ItalicFont = *-Italic ,
+BoldItalicFont = *-BoldItalic
+]
+\usepackage{xcolor}
+
+\usepackage{titlesec}
+\titleformat{\section}
+   {\sffamily
+   \Large
+   \bfseries
+   \color{red}}{\thesection}{1em}{}
+
+
+\usepackage[norsk]{babel}
+
+\begin{document}
+
+\section{Introduksjon}
+
+\lipsum[1-3]
+
+\end{document}
+</code></pre>
+</div>
+<div>
+<img src="tex/fonts1.png">
+</div>	
+</div>
+</section>
+
