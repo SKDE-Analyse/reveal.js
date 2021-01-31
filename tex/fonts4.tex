@@ -1,0 +1,35 @@
+%18-24
+%! TEX program = lualatex
+\documentclass[14pt]{extarticle}
+
+\usepackage{lipsum}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\setsansfont{OpenSans}[
+Path = fonts/,
+Extension = .ttf,
+UprightFont = *-Regular,
+BoldFont = *-Bold,
+ItalicFont = *-Italic ,
+BoldItalicFont = *-BoldItalic
+]
+
+
+\usepackage{titlesec}
+\titleformat{\section}
+   {\sffamily
+   \Large
+   \bfseries
+   }
+   {\thesection}{1em}{}
+
+\begin{document}
+
+\section{Introduksjon}
+
+\lipsum[1-2]
+
+\lipsum[2]
+
+\end{document}
