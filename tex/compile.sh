@@ -2,7 +2,7 @@
 
 for i in *.tex; do
 
-convert ${i%.*}.pdf -colorspace RGB ${i%.*}.png;
+inkscape -l -o ${i%.*}.svg ${i%.*}.pdf
 
 linenum=`head -1 ${i%.*}.tex | cut -c2-`
 
@@ -16,7 +16,7 @@ echo "
 </code></pre>
 </div>
 <div>
-<img src=\"tex/${i%.*}.png\">
+<img src=\"tex/${i%.*}.svg\">
 </div>	
 </div>
 </section>
