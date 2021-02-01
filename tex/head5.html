@@ -2,17 +2,17 @@
 <div class="twocolumn">
 <div>
 <span>
-<pre><code data-trim data-noescape class="tex" data-line-numbers="5">
+<pre><code data-trim data-noescape class="tex" data-line-numbers="5-10">
 \documentclass[14pt]{extarticle}
 
 \usepackage{lipsum}
 
 \usepackage{fancyhdr}
-
-
-
-
-
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\nouppercase{\leftmark}}
+\cfoot{Side \thepage}
+\lhead{Arnfinn et al. 2021}
 
 \begin{document}
 
@@ -26,7 +26,7 @@
 </code></pre>
 </div>
 <div>
-<img src="tex/head1.svg">
+<img src="tex/head5.svg">
 </div>	
 </div>
 </section>
