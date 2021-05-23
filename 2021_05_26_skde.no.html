@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>skde.no</title>
+		<link rel="icon" type="image/png" href="img/hn.png"
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="css/twocolumn.css">
+		<link rel="stylesheet" href="css/imgborder.css">
+		<link rel="stylesheet" href="css/codeblocks.css">
+		<link rel="stylesheet" href="css/headings.css">
+		</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<section data-background-image="img/bg_front_wide.png">
+    <h1>Nye skde.no</h1>
+    <p>
+    Forum 25. mai 2021
+    </p>
+</section>
+
+<section data-background-image="img/bg_wide.png" data-markdown>
+  <textarea data-template>
+## Hensikt
+
+- Resultater fra SKDE
+- Styring
+- Foretrukket kilde
+- Analyse, Kvalitetsregister, forskning
+
+  </textarea>
+</section>
+
+<section>
+<h3>skde.org</h3>
+<iframe src="https://thirsty-ride-2fe556.netlify.app/" title="skde.no" width="100%" height="800">
+</iframe>
+
+</section>
+
+<section data-markdown>
+<textarea data-template>
+## Plan
+
+- 15. juni 2021: Stille publisering (overføring av domene).
+- 21. juni 2021: Barthold nevner nye  `skde.no` på webinar.
+
+</textarea>
+</section>
+
+
+</div>
+</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: 'none',
+				autoAnimate: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes],
+				dependencies: [{
+					src: 'plugin/external/external.js',
+					condition: function() {
+						return !!document.querySelector( '[data-external],[data-external-replace]' );
+					}
+				}]
+			});
+			var resizeSlide = function() {
+   Reveal.configure({
+     width: window.innerWidth,
+     height: window.innerHeight
+   });
+}
+
+setInterval(resizeSlide, 1000);
+		</script>
+	</body>
+</html>
