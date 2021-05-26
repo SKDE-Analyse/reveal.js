@@ -10,3 +10,4 @@ node_modules/
 *.bbl
 *.toc
 *.xml
+Thumbs.db
